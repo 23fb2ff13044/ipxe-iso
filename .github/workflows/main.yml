@@ -33,7 +33,7 @@ jobs:
           #make bin-x86_64-efi/ipxe.efi EMBED=config.ipxe -j2
           make bin-x86_64-efi/snponly.efi EMBED=config.ipxe -j2
       - name: upload ipxe.efi as artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: snponly.efi
           path: ${{ github.workspace }}/ipxe/src/bin-x86_64-efi/snponly.efi
