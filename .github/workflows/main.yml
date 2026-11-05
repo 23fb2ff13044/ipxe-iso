@@ -4,8 +4,7 @@ jobs:
     name: make ipxe
     runs-on: ubuntu-22.04
     container: docker://centos:7.9.2009
-    env:  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
-    steps:
+        steps:
       - name: checkout self/this
         uses: actions/checkout@v5
         with:
