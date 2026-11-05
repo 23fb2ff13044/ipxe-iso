@@ -6,12 +6,12 @@ jobs:
     container: docker://centos:7.9.2009
     steps:
       - name: checkout self/this
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           path: self
       - name: checkout ipxe/ipxe github repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           #ref: v1.20.1 #try to go with latest
